@@ -35,7 +35,7 @@ pip install docker
 
 -----------------------------------------------------------------------------------
 
-On Ansible 2.6 and later, per https://github.com/ansible/ansible/issues/42162, docker-py has been deprecated and when running the Ansible playbook, you may see the following error: 
+On Ansible 2.6 and later, per https://github.com/ansible/ansible/issues/42162, `docker-py` has been deprecated and when running the Ansible playbook, you may see the following error: 
 
 ```
 docker_container: create_host_config() got an unexpected keyword argument 'init'
