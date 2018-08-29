@@ -6,6 +6,8 @@
       - multipathd
 
   - name: remove multipath.conf file
-      file: path='/etc/{{ item }}' state=absent
+      file:
+        path: '/etc/{{ item }}' 
+        state: absent
       with_items:
         - multipath.conf

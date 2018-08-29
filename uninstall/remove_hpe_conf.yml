@@ -1,5 +1,7 @@
 ---
   - name: remove hpe.conf file
-      file: path='/etc/{{ item }}' state=absent
+      file:
+        path: '/etc/{{ item }}'
+        state: absent
       with_items:
         - hpedockerplugin/multipath.conf

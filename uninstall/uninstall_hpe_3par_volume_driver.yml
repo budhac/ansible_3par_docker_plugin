@@ -5,13 +5,13 @@
 
   tasks:
     - name: Remove etcd and 3PAR Volume Plugin containers from Docker
-      include: uninstall/remove_3par_docker_container.yml
+      include: remove_3par_docker_container.yml
 
     - name: Reset multipath
-      include: uninstall/remove_multipath.yml
+      include: remove_multipath.yml
 
     - name: Remove hpe.conf
-      include: uninstall/remove_hpe_conf.yml
+      include: remove_hpe_conf.yml
 
     - name: Remove FlexVolume drivers/service and config files
-      include: uninstall/remove_doryd_files.yml
+      include: remove_doryd_files.yml
