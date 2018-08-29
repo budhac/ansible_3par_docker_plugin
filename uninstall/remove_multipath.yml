@@ -5,6 +5,9 @@
       - iscsid
       - multipathd
 
+  - pause:
+      seconds: 10
+
   - name: remove multipath.conf file
     file:
       path: /etc/multipath.conf

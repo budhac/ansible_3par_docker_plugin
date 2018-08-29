@@ -5,6 +5,9 @@
       enabled: no
       name: doryd.service
 
+  - pause:
+      seconds: 15      
+
   - name: remove doryd files
     file:
       path: '/etc/systemd/system/{{ item }}'
