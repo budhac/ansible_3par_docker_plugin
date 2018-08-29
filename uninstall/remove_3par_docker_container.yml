@@ -3,13 +3,13 @@
     include_vars: '../properties/etcd_cluster_properties.yml'
 
   - name: Stop & remove etcd container
-    docker:
+    docker_container:
       name: etcd_hpe
       image: "{{ etcd_image }}"
       state: absent
 
   - name: Stop & remove hpedockerplugin container
-    docker:
+    docker_container:
       name: plugin_container
       image: hpestorage/legacyvolumeplugin:2.1
       state: absent
