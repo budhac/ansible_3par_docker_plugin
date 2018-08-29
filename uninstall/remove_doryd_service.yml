@@ -6,7 +6,7 @@
       name: doryd.service
 
   - pause:
-      seconds: 15
+      seconds: 5
 
   - name: remove doryd files
     file:
