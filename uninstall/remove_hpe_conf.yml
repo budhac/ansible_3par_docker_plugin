@@ -4,4 +4,4 @@
       path: '/etc/{{ item }}'
       state: absent
     with_items:
-      - hpedockerplugin/multipath.conf
+      - hpedockerplugin/
