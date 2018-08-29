@@ -6,12 +6,12 @@
     docker_container:
       name: etcd_hpe
       image: "{{ etcd_image }}"
-      force_kill: yes
-      state: absent
+      state: stopped
+      auto_remove: yes
 
   - name: Stop & remove hpedockerplugin container
     docker_container:
       name: plugin_container
       image: hpestorage/legacyvolumeplugin:2.1
-      force_kill: yes
-      state: absent
+      state: stopped
+      auto_remove: yes
