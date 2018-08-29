@@ -1,8 +1,7 @@
 ---
   - name: stop doryd service, also issue daemon-reload to pick up config changes
-    systemd:
+    service:
       state: stopped
-      daemon_reload: yes
       enabled: no
       name: doryd.service
 
