@@ -1,0 +1,8 @@
+---
+  - name: Stop & remove hpedockerplugin container
+    docker_container:
+      name: {{ item }}
+      state: absent
+      with_items
+        - plugin_container
+        - etcd_hpe
