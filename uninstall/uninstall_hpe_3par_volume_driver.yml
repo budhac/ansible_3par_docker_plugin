@@ -10,8 +10,5 @@
     - name: Reset multipath
       include: remove_multipath.yml
 
-    - name: Remove hpe.conf
-      include: remove_hpe_conf.yml
-
     - name: Remove FlexVolume drivers/service and config files
       include: remove_doryd_files.yml
