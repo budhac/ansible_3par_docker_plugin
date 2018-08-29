@@ -25,7 +25,7 @@
 
   vars_prompt:
     - name: "storage_config"
-      prompt: "Configure for FC or iSCSI? Type: 'fc' or 'iscsi'."
+      prompt: "Did you edit files/FC or iSCSIhpe.conf? If not, Ctrl-C now and edit the file. Configure for FC or iSCSI? Type: 'fc' or 'iscsi'."
       private: no
       default: "fc"
 
